@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/hypno-game-play/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#07060c" />
+    <meta
+      name="description"
+      content="Coil is an endless attention game. Follow a gently moving dot across a hypnotic spiral. The longer you follow, the more points you earn."
+    />
+    <title>Coil</title>
+    <style>html,body{background:#07060c;height:100%;margin:0}#gl{background:#07060c;width:100%;height:100%;display:block;position:fixed;inset:0}</style>
+    <script type="module" crossorigin src="/hypno-game-play/assets/index-BMEf48rZ.js"></script>
+    <link rel="stylesheet" crossorigin href="/hypno-game-play/assets/index-ZClkg7vf.css">
+  </head>
+  <body>
+    <canvas id="gl" aria-hidden="true"></canvas>
+
+    <header id="hud" hidden>
+      <div class="stat">
+        <b id="score">0</b>
+        <span>Score</span>
+      </div>
+      <div class="stat center">
+        <b id="boost">×1.0</b>
+        <span>Tracking boost</span>
+        <em id="gain" aria-hidden="true"></em>
+      </div>
+      <div id="bones" role="img" aria-label="0 of 5 bones">
+        <svg class="bone" viewBox="0 0 32 18" aria-hidden="true"><path d="M9 6C8 3 6 2 4 3C1 4 1 7 3 9C1 11 1 14 4 15C6 16 8 15 9 12H23C24 15 26 16 28 15C31 14 31 11 29 9C31 7 31 4 28 3C26 2 24 3 23 6Z" /></svg>
+        <svg class="bone" viewBox="0 0 32 18" aria-hidden="true"><path d="M9 6C8 3 6 2 4 3C1 4 1 7 3 9C1 11 1 14 4 15C6 16 8 15 9 12H23C24 15 26 16 28 15C31 14 31 11 29 9C31 7 31 4 28 3C26 2 24 3 23 6Z" /></svg>
+        <svg class="bone" viewBox="0 0 32 18" aria-hidden="true"><path d="M9 6C8 3 6 2 4 3C1 4 1 7 3 9C1 11 1 14 4 15C6 16 8 15 9 12H23C24 15 26 16 28 15C31 14 31 11 29 9C31 7 31 4 28 3C26 2 24 3 23 6Z" /></svg>
+        <svg class="bone" viewBox="0 0 32 18" aria-hidden="true"><path d="M9 6C8 3 6 2 4 3C1 4 1 7 3 9C1 11 1 14 4 15C6 16 8 15 9 12H23C24 15 26 16 28 15C31 14 31 11 29 9C31 7 31 4 28 3C26 2 24 3 23 6Z" /></svg>
+        <svg class="bone" viewBox="0 0 32 18" aria-hidden="true"><path d="M9 6C8 3 6 2 4 3C1 4 1 7 3 9C1 11 1 14 4 15C6 16 8 15 9 12H23C24 15 26 16 28 15C31 14 31 11 29 9C31 7 31 4 28 3C26 2 24 3 23 6Z" /></svg>
+      </div>
+    </header>
+
+    <div id="target" hidden aria-hidden="true">
+      <span class="face">
+        <svg viewBox="0 0 100 100" aria-hidden="true">
+          <circle class="disc" cx="50" cy="50" r="30" />
+          <circle class="ring-track" cx="50" cy="50" r="42" />
+          <circle class="core" cx="50" cy="50" r="11" />
+        </svg>
+      </span>
+    </div>
+
+    <div id="gate" class="scrim">
+      <section class="panel" aria-labelledby="title">
+        <p class="kicker">Attention</p>
+        <h1 id="title">Coil</h1>
+        <p class="deck">
+          Follow the slowly drifting dot with your cursor, or keep your finger on it. The longer you stay with it, the more points you earn.
+        </p>
+        <p class="deck">
+          Every 60–90 seconds, a colored ring and “Click” label appear on the dot. Click or tap it within one second for a gentle sound, a colorful wave, and a blue bone. Five bones earn a spoken “good dog,” then the row starts fresh. Missing a cue is fine.
+        </p>
+        <div class="notice">
+          <h2>Moving visuals</h2>
+          <p>
+            The background contains colorful rotating spirals. Settle in and follow at your own pace.
+          </p>
+        </div>
+        <p class="audio-credit">Reward voice by <a href="https://freesound.org/people/balloonhead/sounds/367156/" target="_blank" rel="noreferrer">balloonhead</a>, adapted under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noreferrer">CC BY 4.0</a>.</p>
+        <div class="actions">
+          <button id="begin" class="primary" type="button">Begin</button>
+        </div>
+      </section>
+    </div>
+
+    <div id="veil" class="scrim" hidden>
+      <section class="panel" aria-labelledby="veil-title">
+        <p class="kicker">Unavailable</p>
+        <h1 id="veil-title">No spiral</h1>
+        <p class="deck">Coil draws its field with WebGL, and this browser did not provide a context.</p>
+      </section>
+    </div>
+
+    <p id="live" class="sr-only" aria-live="polite"></p>
+  </body>
+</html>
