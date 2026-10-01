@@ -12,7 +12,9 @@ cue appears, click or tap the dot within two seconds. Five blue bones earn
 This repository contains the compiled game and its public assets.
 
 The clicker recording by [EricsSoundschmiede](https://freesound.org/people/EricsSoundschmiede/sounds/513862/)
-is released under CC0. Spoken rewards are adapted from a recording by
+is released under CC0. Four spoken rewards are adapted from a recording by
 [balloonhead](https://freesound.org/people/balloonhead/sounds/367156/), licensed
 under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
+Twelve additional dog/pup affirmations use an AI-generated OpenAI voice.
+The 16 phrases rotate across completed bone rows before repeating.
 See [audio credits](audio/README.md) for source and processing details.
