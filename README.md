@@ -5,7 +5,7 @@ blue bone rewards, and a quiet binaural background.
 
 [Play Clicker Training](https://frathe.github.io/clickertrainer/)
 
-Follow the drifting dot with your cursor or finger. When the colored “Click”
+Follow the drifting dot with your cursor or finger. When the colored “Tap” or “Click”
 cue appears, click or tap the dot within two seconds. Five blue bones earn
 500 bonus points and a spoken reward. Missing a cue has no penalty.
 
