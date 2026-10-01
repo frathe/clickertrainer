@@ -11,8 +11,8 @@
     />
     <title>Clicker Training</title>
     <style>html,body{background:#07060c;height:100%;margin:0}#gl{background:#07060c;width:100%;height:100%;display:block;position:fixed;inset:0}</style>
-    <script type="module" crossorigin src="/clickertrainer/assets/index-Dpl4lLbe.js"></script>
-    <link rel="stylesheet" crossorigin href="/clickertrainer/assets/index-DH-AJPiC.css">
+    <script type="module" crossorigin src="/clickertrainer/assets/index-C6vaYaoE.js"></script>
+    <link rel="stylesheet" crossorigin href="/clickertrainer/assets/index-CETrwQAy.css">
   </head>
   <body>
     <canvas id="gl" aria-hidden="true"></canvas>
@@ -63,7 +63,12 @@
     <div id="sound-controls" hidden>
       <button id="background-toggle" type="button" aria-pressed="true">Background on</button>
       <label for="background-volume">Volume</label>
-      <input id="background-volume" type="range" min="0" max="100" value="30" aria-label="Binaural background volume" />
+      <input id="background-volume" type="range" min="0" max="100" value="30" aria-label="Background tones volume" />
+      <span id="session-controls" hidden>
+        <button id="session-toggle" type="button" aria-pressed="false">Pause session</button>
+        <label for="session-volume">Session</label>
+        <input id="session-volume" type="range" min="0" max="100" value="85" aria-label="Main session volume" />
+      </span>
     </div>
 
     <div id="gate" class="scrim">
@@ -79,6 +84,7 @@
         <p class="audio-note">
           Quiet stereo tones ease into a gently drifting theta-range rhythm over 12 minutes. Use headphones at a comfortable volume. Background volume can be adjusted during play.
         </p>
+        <p id="session-note" hidden></p>
         <div class="notice">
           <h2>Moving visuals</h2>
           <p>
