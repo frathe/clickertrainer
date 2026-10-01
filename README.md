@@ -1,9 +1,9 @@
-# ClickerTrainer
+# Clicker Training
 
 A gentle, endless tracking game with colorful rotating spirals, clicker cues,
 blue bone rewards, and a quiet binaural background.
 
-[Play ClickerTrainer](https://frathe.github.io/clickertrainer/)
+[Play Clicker Training](https://frathe.github.io/clickertrainer/)
 
 Follow the drifting dot with your cursor or finger. When the colored “Click”
 cue appears, click or tap the dot within two seconds. Five blue bones earn
